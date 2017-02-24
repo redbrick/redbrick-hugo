@@ -1,4 +1,4 @@
-baseURL: 'https://redbrick.dcu.ie/~username/'
+baseURL: 'https://www.redbrick.dcu.ie/~username/'
 title: A Redbrick users site
 theme:  redbrick-hugo
 description: Your Site
