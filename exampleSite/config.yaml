@@ -1,0 +1,48 @@
+baseURL: 'https://redbrick.dcu.ie/~username/'
+title: A Redbrick users site
+theme:  redbrick-hugo
+description: Your Site
+permalinks:
+  post: /:year/:month/:title/
+languageCode: en-us
+params:
+  background: background.png
+  favicon: favicon.ico
+  copyright: MIT
+  description: Hyperspace Engineer
+  name: redbrick
+  social:
+  - icon: twitter
+    link: '#'
+    medium: twitter
+  - icon: facebook
+    link: '#'
+    medium: facebook
+  - icon: github
+    link: '#'
+    medium: github
+  - icon: envelope
+    link: '#'
+    medium: email
+menu:
+  main:
+  - URL: '/#top'
+    Name: Home
+    Pre: home
+    Weight: -110
+  - URL: '/#Portfolio'
+    Name: Portfolio
+    Pre: th
+    Weight: -100
+  - URL: '/#About'
+    Name: About
+    Pre: user
+    Weight: -90
+  - URL: '/#contact'
+    Name: Contact
+    Pre: envelope
+    Weight: -80
+  - URL: '/code'
+    Name: Code
+    Pre: code
+    Weight: -70

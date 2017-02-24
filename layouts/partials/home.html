@@ -1,0 +1,69 @@
+<div id="main">
+  <section id="top" class="one dark cover">
+    <div class="container">
+      <header>
+        <h2 class="alt">{{ .Title }}</h2>
+        <p>{{ .Description }}</p>
+      </header>
+      <footer>
+        {{ range .Params.mainButton }}
+        <a href="{{ .link }}" class="button scrolly">{{ .text }}</a>
+        {{ end }}
+      </footer>
+    </div>
+  </section>
+  {{ range .Params.row1 }}
+  <section id="{{ .title }}" class="two">
+    <div class="container">
+      <header>
+        <h2>{{ .title }}</h2>
+      </header>
+      <p>{{ .text }}</p>
+      {{ end }}
+      <div class="row">
+        <div class="4u 12u$(mobile)">
+          {{ range .Params.column1 }}
+          <article class="item">
+            <a href="{{ .url }}" class="image fit"><img src="img/{{ .source }}" alt="{{ .alt }}" /></a>
+            <header>
+              <h3>{{ .title }}</h3>
+            </header>
+          </article>
+          {{ end }}
+        </div>
+        <div class="4u 12u$(mobile)">
+          {{ range .Params.column2 }}
+          <article class="item">
+            <a href="{{ .url }}" class="image fit"><img src="img/{{ .source }}" alt="{{ .alt }}" /></a>
+            <header>
+              <h3>{{ .title }}</h3>
+            </header>
+          </article>
+          {{ end }}
+        </div>
+        <div class="4u 12u$(mobile)">
+          {{ range .Params.column3 }}
+          <article class="item">
+            <a href="{{ .url }}" class="image fit"><img src="img/{{ .source }}" alt="{{ .alt }}" /></a>
+            <header>
+              <h3>{{ .title }}</h3>
+            </header>
+          </article>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ range .Params.row2 }}
+  <section id="{{ .title }}" class="three">
+    <div class="container">
+      <header>
+        <h2>{{ .title }}</h2>
+      </header>
+      <a href="#" class="image featured"><img src="img/{{ .img }}" alt="" /></a>
+      <p> {{ .text }} </p>
+    </div>
+  </section>
+  {{ end }}
+  {{ partial "contact" . }}
+</div>

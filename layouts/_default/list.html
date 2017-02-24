@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ partial "header" . }}
+    {{ if .IsHome }}
+      {{ partial "home" . }}
+    {{ else }}
+      {{ partial "page" . }}
+    {{ end }}
+    {{ partial "footer" . }}
+    {{ partial "scripts" . }}
+  </body>
+</html>

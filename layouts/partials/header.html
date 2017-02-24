@@ -1,0 +1,16 @@
+<div id="header">
+  <div class="top">
+    <!-- Logo -->
+      <div id="logo">
+        <span class="image avatar48"><img src="{{ .Site.BaseURL }}img/avatar.png" alt="" /></span>
+        <h1 id="title">{{ .Site.Params.name }}</h1>
+        <p>{{ .Site.Params.description }}</p>
+      </div>
+    <!-- Nav -->
+    {{ partial "nav" . }}
+  </div>
+  <div class="bottom">
+    <!-- Social Icons -->
+    {{ partial "social" . }}
+  </div>
+</div>
