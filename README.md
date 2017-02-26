@@ -25,7 +25,7 @@ $ cd ~/my-website
 $ ls -F
 ```
 
-Open up the <code>config.yaml</code> file to change the configuration of your website
+Open up the `config.yaml` file to change the configuration of your website
 
 ```
 $ nano config.yaml
@@ -51,20 +51,26 @@ This will output all the code into the <code>public</code> folder.
 
 *Note:* Hugo can be weird if you don't delete your public before you generate everytime
 
-*Warning*: rm -r is sometimes dangerous. Don't run in sudo unless you know what you are doing
+*Warning*: rm -rf is sometimes dangerous. Don't run in sudo unless you know what you are doing
 
 ```
-$ rm -r public
+$ rm -rf public
 ```
 
 This will _perminantly_ delete the public folder
+
+You can also achieve the same thing by 
+
+```
+$ hugo --cleanDestinationDir
+```
 
 ## Looking at the site locally
 
 If you wanna look at your site before you go and deplot it (recomended)
 
 ```
-$ hugo server --bind=0.0.0.0 --baseUrl=http://localhost/ -D -F
+$ hugo server 
 ```
 
-This will generate a site on localhost:2323
+This will generate a site on localhost:1313
