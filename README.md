@@ -31,13 +31,36 @@ Open up the `config.yaml` file to change the configuration of your website
 $ nano config.yaml
 ```
 
-## Changing pictures
+## Making it your own
+
+
+### Changing images
 
 To get started you will want to add your own picutres for your avatar, banner and about photos. To change these you will need to add these to your <code>/static/img/</code> folder.
 
 * avatar.jpg
 * banner.jpg
 * about.jpg
+
+### Customising pages
+
+* Change the baseURL <code>baseURL: "http://www.redbrick.dcu.ie/~username/"</code> to inclue your username
+* Change <code>title: A Redbrick users site</code> to the title of your main page 
+* You can also add your social media links in here after <code>link: '#'</code>
+
+### Adding new pages
+```
+$ hugo new about.md
+```
+
+* This will generate a new page with some metadata all ready in it
+
+Take a look at this new file with
+
+```
+$ cd content
+$ nano about.md
+```
 
 ## Building the Site
 
