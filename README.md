@@ -30,7 +30,7 @@ $ git clone git@github.com:redbrick/redbrick-hugo.git themes/redbrick-hugo
 $ cp -r themes/redbrick-hugo/exampleSite/* .
 ```
 
-Open up the ```config.yaml``` file to change the configuration of your website
+Open up the `config.yaml` file to change the configuration of your website
 
 ```
 $ nano config.yaml
@@ -48,9 +48,9 @@ To get started you will want to add your own picutres for your avatar, banner an
 
 ### Customising pages
 
-* Change the baseURL ``` baseURL: "http://www.redbrick.dcu.ie/~username/"``` to inclue your username
-* Change ```title: A Redbrick users site``` to the title of your main page 
-* You can also add your social media links in here after ```link: '#'```
+* Change the baseURL ` baseURL: "http://www.redbrick.dcu.ie/~username/"` to inclue your username
+* Change `title: A Redbrick users site` to the title of your main page 
+* You can also add your social media links in here after `link: '#'`
 
 ### Adding new pages
 ```
