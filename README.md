@@ -36,7 +36,7 @@ $ nano config.yaml
 
 ### Changing images
 
-To get started you will want to add your own picutres for your avatar, banner and about photos. To change these you will need to add these to your ```/static/img/``` folder.
+To get started you will want to add your own picutres for your avatar, banner and about photos. To change these you will need to add these to your `/static/img/` folder.
 
 * avatar.jpg
 * banner.jpg
