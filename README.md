@@ -24,6 +24,11 @@ Jump into your new site and have a look around at the files
 $ cd ~/my-website
 $ ls -F
 ```
+Install your theme
+```
+$ git clone git@github.com:redbrick/redbrick-hugo.git themes/redbrick-hugo
+$ cp -r themes/redbrick-hugo/exampleSite/* .
+```
 
 Open up the ```config.yaml``` file to change the configuration of your website
 
@@ -32,7 +37,6 @@ $ nano config.yaml
 ```
 
 ## Making it your own
-
 
 ### Changing images
 
@@ -69,8 +73,7 @@ To build your site we type the command
 ```
 $ hugo
 ```
-
-This will output all the code into the ```public``` folder.
+This will output all the code into the `public` folder.
 
 *Note:* Hugo can be weird if you don't delete your public before you generate everytime
 
@@ -82,7 +85,7 @@ $ rm -rf public
 
 This will _perminantly_ delete the public folder
 
-You can also achieve the same thing by 
+You can also achieve the same thing by
 
 ```
 $ hugo --cleanDestinationDir
@@ -93,7 +96,7 @@ $ hugo --cleanDestinationDir
 If you wanna look at your site before you go and deplot it (recomended)
 
 ```
-$ hugo server 
+$ hugo server
 ```
 
 This will generate a site on localhost:1313
