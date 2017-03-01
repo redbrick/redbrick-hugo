@@ -1,0 +1,12 @@
+name = "Redbrick-hugo"
+license = "MIT"
+licenselink = "https://github.com/redbrick/redbrick-hugo/blob/master/LICENSE.md"
+description = "redbrick theme for hugo"
+homepage = "https://www.redbrick.dcu.ie/~butlerx/hugo/"
+tags = ["potfolio", "demo"]
+features = ["portfolio", "demo", "contact"]
+min_version = 0.18
+
+[author]
+  name = "butlerx"
+  homepage = "https://butlerx.notthe.cloud"
